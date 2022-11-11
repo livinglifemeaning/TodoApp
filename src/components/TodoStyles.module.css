@@ -1,0 +1,47 @@
+.todo{
+    background-color: var(--bg-secondary); 
+    padding: 1rem; 
+    display: flex; 
+    gap: 1rem; 
+    align-items: center;
+    color: var(--todo-text)
+}
+
+@media (min-width: 45em) {
+    .todo{
+
+        font-size: 1.2rem; 
+    }
+}
+
+.todo input{
+    background: transparent; 
+    border: 0;  
+    flex-grow: 1; 
+    color: inherit; 
+}
+
+.todo input::placeholder{
+    color: var(--accent-text); 
+}
+
+.todo input:focus-visible{
+    outline: none; 
+}
+
+.completed{
+    text-decoration: line-through;
+    color: var(--completed-todo)
+}
+.check{
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    border: solid 1px var(--accent-text); 
+    cursor: pointer; 
+}
+
+.completed .check{
+    background: url(../images/icon-check.svg ) center / 12px no-repeat ,var(--c-check-gradient);  
+    border: 0;
+}

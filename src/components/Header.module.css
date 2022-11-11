@@ -1,0 +1,50 @@
+.header{
+    background: url(../images/bg-mobile-light.jpg) top / cover no-repeat;
+}
+[data-color-scheme= dark] .header{
+    background: url(../images/bg-mobile-dark.jpg) top / cover no-repeat;
+}
+@media (prefers-color-scheme: dark) {
+    .header{
+        background: url(../images/bg-mobile-dark.jpg) top / cover no-repeat;
+    }
+}
+
+
+.content{
+    display: flex;  
+    align-items: baseline;
+    justify-content: space-between;
+    padding-inline: 1.325rem; 
+    padding-top: 2rem; 
+    padding-bottom: 8rem; 
+    max-width: 50rem; 
+    margin: 0 auto; 
+}
+
+@media (min-width: 45em) {
+    .header{
+        background: url(../images/bg-desktop-light.jpg) top / cover no-repeat;
+    }
+    [data-color-scheme= dark] .header{
+        background: url(../images/bg-desktop-dark.jpg) top / cover no-repeat;
+    }
+    .content{
+        padding-top: 5rem; 
+        padding-bottom: 10rem; 
+    }
+} 
+.title{
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-size: clamp(2rem, 8vw, 3rem ); 
+    color: var(--c-white); 
+}
+
+.themeToggle{
+    cursor: pointer; 
+}
+
+.themeToggle:active{
+    scale: .98; 
+}

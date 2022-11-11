@@ -1,0 +1,11 @@
+.todo{
+    border-bottom: solid 1px var(--underline); 
+}
+.delete{
+    cursor: pointer; 
+    margin-left: auto; 
+}
+
+.delete:active img{
+    scale: .95; 
+}

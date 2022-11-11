@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+html {
+  --f-primary: "Josefin Sans", sans-serif;
+  /* shared styles */
+  --c-blue-primary: hsl(220, 98%, 61%);
+  --c-check-gradient: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  --c-white: hsl(0, 0%, 100%);
+  /* Light Theme */
+  --c-offwhite: hsl(0, 0%, 98%);
+  --c-light-100: hsl(236, 33%, 92%);
+  --c-light-300: hsl(233, 11%, 84%);
+  --c-light-500: hsl(236, 9%, 61%);
+  --c-light-600: hsl(235, 19%, 35%);
+  /* Dark Theme */
+  --c-dark-100: hsl(236, 33%, 92%);
+  --c-dark-200: hsl(234, 39%, 85%);
+  --c-dark-300: hsl(234, 11%, 52%);
+  --c-dark-400: hsl(233, 14%, 35%);
+  --c-dark-500: hsl(237, 14%, 26%);
+  --c-dark-600: hsl(235, 24%, 19%);
+  --c-dark-700: hsl(235, 21%, 11%);
+}
+:root {
+  color-scheme: light;
+  --bg-primary: var(--c-offwhite);
+  --bg-secondary: var(--c-white); 
+  --accent-text: var(--c-light-500); 
+  --todo-text: var(--c-light-600); 
+  --underline: var(--c-light-100);  
+  --completed-todo: var(--c-light-300);
+  --box-shadow: 0 5px 20px  hsla(235, 19%, 35%, .3); 
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg-primary: var(--c-dark-700);
+    --bg-secondary: var(--c-dark-600); 
+    --accent-text: var(--c-dark-300); 
+    --todo-text: var(--c-dark-100); 
+    --underline: var(--c-light-100); 
+    --completed-todo: var(--c-light-300);
+    --box-shadow: 0 5px 20px  hsla(235, 21%, 6%, .9);   
+  }
+}
+
+[data-color-scheme="light"] {
+  color-scheme: light;
+  --bg-primary: var(--c-offwhite);
+  --bg-secondary: var(--c-white); 
+  --accent-text: var(--c-light-500); 
+  --todo-text: var(--c-light-600); 
+  --underline: var(--c-light-100);   
+  --completed-todo: var(--c-light-300); 
+  --box-shadow: 0 5px 20px  hsla(235, 19%, 35%, .3); 
+}
+
+[data-color-scheme="dark"] {
+  color-scheme: dark;
+  --bg-primary: var(--c-dark-700);
+  --bg-secondary: var(--c-dark-600);
+  --accent-text: var(--c-dark-300); 
+  --todo-text: var(--c-dark-100);  
+  --underline: var(--c-dark-400);  
+  --completed-todo: var(--c-dark-500); 
+  --box-shadow: 0 5px 20px  hsla(235, 21%, 6%, .9);   
+}

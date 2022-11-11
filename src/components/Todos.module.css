@@ -1,0 +1,64 @@
+.todos{
+    padding-inline: 1.325rem; 
+    translate: 0 -7rem;  
+    max-width: 50rem; 
+    margin: 0 auto;  
+}
+
+.todoBox{
+    background-color: var(--bg-secondary);
+    margin-top: 1rem; 
+    border-radius: 5px;  
+    box-shadow: var(--box-shadow); 
+}
+
+.todoBox > div:first-child{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.todoBox > div:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.endBar{
+    display: flex;
+    justify-content: space-between;
+    color: var(--accent-text); 
+    padding: 1rem; 
+}
+
+.setDisplayBox{
+    margin-top: 1rem; 
+    background-color: var(--bg-secondary);
+    display: flex;
+    justify-content: center;
+    padding: 1rem; 
+    border-radius: 5px; 
+    box-shadow: var(--box-shadow);
+}
+.setDisplay{
+    font-weight: 700; 
+    display: flex; 
+    gap: 1rem; 
+    color: var(--accent-text); 
+}
+
+.setDisplay .active{
+    color: var(--c-blue-primary); 
+}
+
+.setDisplay span, .clear{
+    cursor: pointer; 
+}
+
+.setDisplay span:hover, .clear:hover{
+    color: var(--todo-text); 
+}
+
+.drag{
+    text-align: center; 
+    margin-top: 3rem; 
+    color: var(--todo-text)
+}
